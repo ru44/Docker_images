@@ -24,6 +24,3 @@ VOLUME ["/app/data"]
 
 # Set the default shell to zsh
 SHELL ["/bin/zsh", "-c"]
-
-# Set the entrypoint
-ENTRYPOINT ["/bin/zsh"]

@@ -1,4 +1,4 @@
-FROM node:latest-alpine
+FROM node:23-alpine3.20
 
 # Install dependencies
 
@@ -22,11 +22,5 @@ SHELL ["/bin/zsh", "-c"]
 # install pnpm
 RUN npm install -g pnpm
 
-# install bun
-RUN npm install -g bun
-
 # Set the working directory
 WORKDIR /app
-
-# Set the entrypoint
-ENTRYPOINT ["/bin/zsh"]
